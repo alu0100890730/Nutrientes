@@ -29,6 +29,10 @@ RSpec.describe Alimento do
     expect(@HuevoFrito.lipidos).not_to be nil
   end
   
+  it "Existe un metodo para obtener el nombre " do 
+    expect(@HuevoFrito.nombre).to eq("Huevo Frito")
+  end
+  
   
   
 end
