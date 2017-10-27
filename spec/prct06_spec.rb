@@ -33,6 +33,18 @@ RSpec.describe Alimento do
     expect(@HuevoFrito.nombre).to eq("Huevo Frito")
   end
   
+    it "Existe un metodo para obtener la cantidad de proteinas" do 
+    expect(@HuevoFrito.proteinas).to eq(14.1)
+  end 
+  
+  it "Existe un metodo para obtener la cantidad de glucidos" do 
+    expect(@HuevoFrito.glucidos).to eq(0.0)
+  end
+  
+  it "Existe un metodo para obtener la cantidad de lipidos" do 
+    expect(@HuevoFrito.lipidos).to eq(19.5)
+  end
+  
   
   
 end
