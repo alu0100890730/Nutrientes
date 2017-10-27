@@ -47,7 +47,7 @@ RSpec.describe Alimento do
   
   it "Existe un metodo para obtener el alimento por pantalla como se desea" do
     expect(@HuevoFrito).to respond_to(:to_s)
-    expect(@HuevoFrito.to_s).to eq("Huevo frito: 14.1 0.0 10.5")
+    expect(@HuevoFrito.to_s).to eq("Huevo Frito: 14.1 0.0 19.5")
   end 
   
   

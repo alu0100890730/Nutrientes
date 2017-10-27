@@ -9,4 +9,8 @@ class Alimento
     @lipidos = lipidos
   end  
   
+  def to_s
+        imprime = "#{@nombre}: #{@proteinas} #{@glucidos} #{@lipidos}"
+  end
+  
 end
