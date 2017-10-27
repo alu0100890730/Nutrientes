@@ -13,4 +13,8 @@ class Alimento
         imprime = "#{@nombre}: #{@proteinas} #{@glucidos} #{@lipidos}"
   end
   
+  def valor_calorico
+      valor = (@proteinas * 4) + (@glucidos * 4) + (@lipidos * 9)
+  end 
+  
 end
