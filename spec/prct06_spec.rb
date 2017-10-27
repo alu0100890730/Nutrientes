@@ -45,6 +45,10 @@ RSpec.describe Alimento do
     expect(@HuevoFrito.lipidos).to eq(19.5)
   end
   
+  it "Existe un metodo para obtener el alimento por pantalla como se desea" do
+    expect(@HuevoFrito).to respond_to(:to_s)
+    expect(@HuevoFrito.to_s).to eq("Huevo frito: 14.1 0.0 10.5")
+  end 
   
   
 end
