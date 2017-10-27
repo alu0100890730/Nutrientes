@@ -50,5 +50,9 @@ RSpec.describe Alimento do
     expect(@HuevoFrito.to_s).to eq("Huevo Frito: 14.1 0.0 19.5")
   end 
   
+  it "Existe un metodo para obtener el valor calorico de un alimento" do 
+    expect(@HuevoFrito).to respond_to(:valor_calorico)
+    expect(@HuevoFrito.valor_calorico).to eq(231.9)
+  end 
   
 end
