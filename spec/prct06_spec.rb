@@ -143,3 +143,9 @@ RSpec.describe Alimento do
   end 
   
 end
+
+RSpec.describe Lista do
+  before :each do
+    @HuevoFrito = Alimento.new(14.1, 0.0, 19.5)
+  end
+end
