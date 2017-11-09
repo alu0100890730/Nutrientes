@@ -153,4 +153,8 @@ RSpec.describe Lista do
     
     @lista = Lista.new()
   end
+  
+  it "La lista esta vacia" do
+    expect(@lista.tamanio).to eq(0)
+  end
 end
