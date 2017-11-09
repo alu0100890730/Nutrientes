@@ -150,5 +150,7 @@ RSpec.describe Lista do
     @LecheVaca = Alimentos.new("Leche Vaca", 3.3, 4.8, 3.2)
     @Yogurt = Alimentos.new("Yogurt", 3.8, 4.9, 3.8)
     @Cerdo  = Alimentos.new("Cerdo", 21.5, 0.0, 6.3)
+    
+    @lista = Lista.new()
   end
 end
