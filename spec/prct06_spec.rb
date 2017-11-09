@@ -146,6 +146,9 @@ end
 
 RSpec.describe Lista do
   before :each do
-    @HuevoFrito = Alimento.new(14.1, 0.0, 19.5)
+    @HuevoFrito = Alimento.new("Huevo Frito", 14.1, 0.0, 19.5)
+    @LecheVaca = Alimentos.new("Leche Vaca", 3.3, 4.8, 3.2)
+    @Yogurt = Alimentos.new("Yogurt", 3.8, 4.9, 3.8)
+    @Cerdo  = Alimentos.new("Cerdo", 21.5, 0.0, 6.3)
   end
 end
