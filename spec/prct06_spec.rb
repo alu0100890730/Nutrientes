@@ -152,9 +152,16 @@ RSpec.describe Lista do
     @Cerdo  = Alimento.new("Cerdo", 21.5, 0.0, 6.3)
     
     @lista = Lista.new()
+    
+    #Nodos
+    @nodo1 = Nodo.new(@HuevoFrito, @nodo2, nil)
+    @nodo2 = Nodo.new(@LecheVaca, @nodo3, @nodo1)
+    @nodo3 = Nodo.new(@Yogurt, nil, @nodo2)
+    
   end
   
   it "La lista esta vacia" do
     expect(@lista.tamanio).to eq(0)
   end
+  
 end
