@@ -1,5 +1,6 @@
 require "spec_helper"
 require "./lib/prct06/valor_calorico.rb"
+require "./lib/prct06/lista.rb"
 
 RSpec.describe Prct06 do
   it "Tiene una version" do
