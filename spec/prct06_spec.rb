@@ -155,13 +155,19 @@ RSpec.describe Lista do
     
     #Nodos
     @nodo1 = Nodo.new(@HuevoFrito, @nodo2, nil)
-    @nodo2 = Nodo.new(@LecheVaca, @nodo3, @nodo1)
     @nodo3 = Nodo.new(@Yogurt, nil, @nodo2)
+    @nodo2 = Nodo.new(@LecheVaca, @nodo3, @nodo1)
     
   end
   
   it "La lista esta vacia" do
     expect(@lista.tamanio).to eq(0)
+  end
+  
+    it "Definicion de nodo de la lista, con su valor, su siguiente y su anterior" do
+    expect(@nodo2.valor).to eq(@LecheVaca)
+    expect(@nodo2.siguiente).to eq(@nodo3)
+    expect(@nodo2.anterior).to eq(@nodo1)
   end
   
 end
