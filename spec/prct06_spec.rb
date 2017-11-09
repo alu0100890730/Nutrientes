@@ -178,5 +178,13 @@ RSpec.describe Lista do
     expect(@lista.queue).to eq(@nodo3)
   end
   
+  it "Insertando valor al principio de la lista" do
+    @lista.insert_head(@nodo2)
+    expect(@lista.head).to eq(@nodo2)
+    
+    expect(@lista.tamanio).to eq(1)
+  end
+  
+  
   
 end
