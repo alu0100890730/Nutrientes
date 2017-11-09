@@ -164,10 +164,19 @@ RSpec.describe Lista do
     expect(@lista.tamanio).to eq(0)
   end
   
-    it "Definicion de nodo de la lista, con su valor, su siguiente y su anterior" do
+  it "Definicion de nodo de la lista, con su valor, su siguiente y su anterior" do
     expect(@nodo2.valor).to eq(@LecheVaca)
     expect(@nodo2.siguiente).to eq(@nodo3)
     expect(@nodo2.anterior).to eq(@nodo1)
   end
+  
+  it "Definicion de lista con cabeza y cola" do
+    @lista.head = @nodo1
+    @lista.queue = @nodo3
+    
+    expect(@lista.head).to eq(@nodo1)
+    expect(@lista.queue).to eq(@nodo3)
+  end
+  
   
 end
