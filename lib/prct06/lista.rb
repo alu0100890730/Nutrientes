@@ -2,7 +2,7 @@ Nodo = Struct.new(:valor, :siguiente, :anterior)
 
 class Lista
   
-  attr_reader :head, :queue, :tamanio
+  attr_accessor :head, :queue, :tamanio
   
   def initialize
     @head = nil
@@ -10,5 +10,29 @@ class Lista
     @tamanio = 0
   end
   
-  def 
-end
+  def insert_head(nodo)
+    if empty
+      nodo[:siguiente] = nil
+      nodo[:anterior] = nil
+      @head = nodo
+      @queue = nodo
+    else
+      nodo[:siguiente] = @head
+      @head[:anterior] = nodo
+      nodo[:anterior] = nil
+      @head = nodo
+    end
+    
+    @tamanio = @tamanio + 1
+    
+  end
+  
+  def empty
+    if tamanio == 0
+      true
+    else
+      false
+    end
+  end
+
+end  
