@@ -5,7 +5,7 @@ class AlimentoC < Alimento
   
   def initialize(nombre, proteinas, glucidos, lipidos, grupo)
     @nombre = nombre
-    super(proteinas, glucidos, lipidos)
+    super(nombre, proteinas, glucidos, lipidos)
     @grupo = grupo
   end
   
