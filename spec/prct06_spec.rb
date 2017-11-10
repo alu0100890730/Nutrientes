@@ -222,5 +222,9 @@ RSpec.describe Lista do
     expect(@lista.tamanio).to eq(3)
   end
   
-  
+end
+
+RSpec.describe AlimentoC do
+    before :each do
+      @HuevoFrito = AlimentoC.new("Huevo Frito", 14.1, 0.0, 19.5, "Huevos, lacteos y helados" )
 end
