@@ -58,6 +58,23 @@ class Lista
     end
   end	
   
+  def pop_head
+    if !empty
+      if @head == @queue
+	aux = @head
+	@head = nil
+	@queue = nil
+      else
+	aux = @head
+	@head = @head.siguiente
+	@head[:anterior] = nil
+      end
+      
+      @tamanio = @tamanio -1
+      aux
+    end
+  end
+  
   def empty
     if tamanio == 0
       true
