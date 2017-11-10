@@ -92,6 +92,17 @@ class Lista
     end
   end
   
+  def to_s
+        aux = @head
+        s = ""
+        while aux.siguiente != nil
+            s += aux.valor.to_s + "\n"
+            aux =  aux.siguiente
+        end
+        s += aux.valor.to_s
+        
+    end 
+    
   def empty
     if tamanio == 0
       true

@@ -1,6 +1,7 @@
 require "spec_helper"
 require "./lib/prct06/valor_calorico.rb"
 require "./lib/prct06/lista.rb"
+require "./lib/prct06/AlimentoC.rb"
 
 RSpec.describe Prct06 do
   it "Tiene una version" do
@@ -227,4 +228,5 @@ end
 RSpec.describe AlimentoC do
     before :each do
       @HuevoFrito = AlimentoC.new("Huevo Frito", 14.1, 0.0, 19.5, "Huevos, lacteos y helados" )
+    end
 end
