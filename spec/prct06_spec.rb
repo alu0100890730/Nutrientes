@@ -233,4 +233,12 @@ RSpec.describe AlimentoC do
     it "Jerarquia AlimentoC < Alimento " do 
       expect(@HuevoFrito).to be_kind_of(Alimento)
     end 
+    
+    it"El objeto pertenece a la jerarquia" do
+      expect(@HuevoFrito.is_a? Alimento).to eq(true)
+    end
+    
+    it "Accediendo al grupo de alimento " do
+      expect(@HuevoFrito.grupo).to eq("Huevos, lacteos y helados")
+    end 
 end
