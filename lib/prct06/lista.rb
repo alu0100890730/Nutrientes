@@ -75,7 +75,22 @@ class Lista
     end
   end
   
-
+  def pop_queue
+    if !empty
+      if @queue == @head
+	aux = @queue
+	@head = nil
+	@queue = nil
+      else
+	aux = @queue
+	@queue =aux.anterior
+	@queue[:siguiente] = nil
+      end
+     
+      @tamanio = @tamanio - 1
+      aux
+    end
+  end
   
   def empty
     if tamanio == 0
