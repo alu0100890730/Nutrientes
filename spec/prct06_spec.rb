@@ -246,5 +246,10 @@ RSpec.describe AlimentoC do
       expect(@HuevoFrito).to respond_to(:valor_calorico)
       expect(@HuevoFrito.valor_calorico).to eq(231.9)
     end 
+    
+    it "Obteniendo alimento formateado" do
+      expect(@HuevoFrito).to respond_to(:to_s)
+      expect(@HuevoFrito.to_s).to eq("Huevo Frito\tHuevo Frito: 14.1 0.0 19.5\tHuevos, lacteos y helados")
+  end 
   
 end
