@@ -157,6 +157,7 @@ RSpec.describe Lista do
     @nodo1 = Nodo.new(@HuevoFrito, @nodo2, nil)
     @nodo3 = Nodo.new(@Yogurt, nil, @nodo2)
     @nodo2 = Nodo.new(@LecheVaca, @nodo3, @nodo1)
+    @nodo4 = Nodo.new(@Cerdo)
     
   end
   
@@ -190,6 +191,15 @@ RSpec.describe Lista do
     expect(@lista.queue).to eq(@nodo3)
     
     expect(@lista.tamanio).to eq(1)
+  end
+  
+  it "Insertando varios elementos" do
+      @lista.insert_head(@nodo2)
+      @lista.insert_head(@nodo1)
+      @lista.insert_plus([@nodo3, @nodo4], 2)
+      
+      expect(@lista.head.siguiente).to eq(@nodo3)
+      expect(@lista.tamanio).to eq(3)
   end
   
   
