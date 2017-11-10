@@ -198,8 +198,8 @@ RSpec.describe Lista do
       @lista.insert_head(@nodo1)
       @lista.insert_plus([@nodo3, @nodo4], 2)
       
-      expect(@lista.head.siguiente).to eq(@nodo3)
-      expect(@lista.tamanio).to eq(3)
+      expect(@lista.queue).to eq(@nodo4)
+      expect(@lista.tamanio).to eq(4)
   end
   
   

@@ -43,6 +43,21 @@ class Lista
     @tamanio = @tamanio + 1
   end
   
+  def insert_plus(nodos, index)
+    #si el indice es 1, insertara por la cabeza
+    if(index == 1)
+      for i in 0..(nodos.length-1)
+	insert_head(nodos[i])
+      end
+    end
+      #Si el indice es 2, insertara por la cola
+    else if(index == 2)
+      for i in 0..(nodos.length-1)
+	insert_queue(nodos[i])
+      end
+    end
+  end	
+  
   def empty
     if tamanio == 0
       true
