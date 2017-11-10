@@ -241,4 +241,10 @@ RSpec.describe AlimentoC do
     it "Accediendo al grupo de alimento " do
       expect(@HuevoFrito.grupo).to eq("Huevos, lacteos y helados")
     end 
+    
+    it "Responde correctamente a metodos de la clase padre" do
+      expect(@HuevoFrito).to respond_to(:valor_calorico)
+      expect(@HuevoFrito.valor_calorico).to eq(231.9)
+    end 
+  
 end
