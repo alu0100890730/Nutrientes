@@ -202,13 +202,23 @@ RSpec.describe Lista do
       expect(@lista.tamanio).to eq(4)
   end
   
-  it"Extrayendo primer elemento" do
+  it"Extraer primer elemento" do
     @lista.insert_head(@nodo2)
     @lista.insert_head(@nodo1)
     @lista.insert_plus([@nodo3, @nodo4], 1)
     
     @lista.pop_head
     expect(@lista.head).to eq(@nodo3)
+    expect(@lista.tamanio).to eq(3)
+  end
+  
+  it"Extraer ultimo elemento" do
+    @lista.insert_head(@nodo2)
+    @lista.insert_head(@nodo1)
+    @lista.insert_plus([@nodo3, @nodo4], 2)
+    
+    @lista.pop_queue
+    expect(@lista.queue).to eq(@nodo3)
     expect(@lista.tamanio).to eq(3)
   end
   

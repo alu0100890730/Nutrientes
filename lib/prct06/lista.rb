@@ -35,7 +35,7 @@ class Lista
       @queue = nodo
     else
       nodo[:siguiente] = nil
-      nodo[:anterior] = @cola
+      nodo[:anterior] = @queue
       @queue[:siguiente] = nodo
       @queue = nodo
     end
@@ -74,6 +74,8 @@ class Lista
       aux
     end
   end
+  
+
   
   def empty
     if tamanio == 0
