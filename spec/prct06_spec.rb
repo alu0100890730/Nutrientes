@@ -229,4 +229,8 @@ RSpec.describe AlimentoC do
     before :each do
       @HuevoFrito = AlimentoC.new("Huevo Frito", 14.1, 0.0, 19.5, "Huevos, lacteos y helados" )
     end
+    
+    it "Jerarquia AlimentoC < Alimento " do 
+      expect(@HuevoFrito).to be_kind_of(Alimento)
+    end 
 end
