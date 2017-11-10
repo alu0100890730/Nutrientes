@@ -185,6 +185,11 @@ RSpec.describe Lista do
     expect(@lista.tamanio).to eq(1)
   end
   
+  it "Insertando valor al final de la lista" do
+    @lista.insert_queue(@nodo3)
+    expect(@lista.queue).to eq(@nodo3)
+    
+    expect(@lista.size).to eq(1)
   
   
 end
