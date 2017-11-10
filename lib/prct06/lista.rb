@@ -27,6 +27,22 @@ class Lista
     
   end
   
+  def insert_queue(nodo)
+    if empty
+      nodo[:siguiente] = nil
+      nodo[:anterior] = nil
+      @head = nodo
+      @queue = nodo
+    else
+      nodo[:siguiente] = nil
+      nodo[:anterior] = @cola
+      @queue[:siguiente] = nodo
+      @queue = nodo
+    end
+    
+    @tamanio = @tamanio + 1
+  end
+  
   def empty
     if tamanio == 0
       true

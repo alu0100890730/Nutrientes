@@ -189,7 +189,8 @@ RSpec.describe Lista do
     @lista.insert_queue(@nodo3)
     expect(@lista.queue).to eq(@nodo3)
     
-    expect(@lista.size).to eq(1)
+    expect(@lista.tamanio).to eq(1)
+  end
   
   
 end
