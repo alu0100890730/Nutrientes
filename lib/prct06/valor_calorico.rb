@@ -23,6 +23,14 @@ class Alimento
     end
   end
   
+  def == (other)
+        if other.is_a?Alimento
+            valor_calorico == other.valor_calorico
+        else
+            false
+        end
+    end
+  
   def to_s
         imprime = "#{@nombre}: #{@proteinas} #{@glucidos} #{@lipidos}"
   end
