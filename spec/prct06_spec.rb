@@ -368,4 +368,8 @@ RSpec.describe Alimento do
     expect(@lista.max).to eq(@HuevoFrito)
   end 
   
+  it "Utilizando Mixin Enumerable, Min Lista" do 
+    expect(@lista.min).to eq (@LecheVaca)
+  end 
+  
 end
