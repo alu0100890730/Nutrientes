@@ -377,4 +377,8 @@ RSpec.describe Alimento do
     expect(@lista.include?@LecheVaca).to eq(true)
   end 
   
+  it "Funcion count" do 
+    expect(@lista.count).to eq(2) 
+  end
+  
 end
