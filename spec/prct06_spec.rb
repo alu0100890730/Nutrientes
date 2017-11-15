@@ -372,4 +372,9 @@ RSpec.describe Alimento do
     expect(@lista.min).to eq (@LecheVaca)
   end 
   
+  it "Funcion include" do
+    expect(@lista.include?@HuevoFrito).to eq(true)
+    expect(@lista.include?@LecheVaca).to eq(true)
+  end 
+  
 end
