@@ -333,3 +333,18 @@ RSpec.describe Lista do
     end 
   
 end
+
+RSpec.describe Alimento do
+  before :each do
+    @HuevoFrito = AlimentoC.new("Huevo Frito", 14.1, 0.0, 19.5, "Huevos, lacteos y helados" )
+    @LecheVaca = AlimentoC.new("Leche vaca", 3.3, 4.8, 3.2, "Huevos, lacteos y helados")
+    
+    @nodo1 = Nodo.new(@HuevoFrito)
+    @nodo2 = Nodo.new(@LecheVaca)
+    
+    @lista = Lista.new()
+    @lista.insert_queue(@nodo1)
+    @lista.insert_queue(@nodo2)
+    
+  end
+end
