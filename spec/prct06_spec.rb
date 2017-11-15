@@ -355,4 +355,8 @@ RSpec.describe Alimento do
   it "HuevoFrito menos valor energético que Leche vaca" do 
     expect(@HuevoFrito < @LecheVaca).to eq(false)
   end
+  
+  it "Huevo Frito no es igual a Leche Vaca" do 
+    expect(@HuevoFrito == @LecheVaca).to eq(false)
+  end
 end
