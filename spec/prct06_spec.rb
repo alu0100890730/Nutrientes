@@ -347,4 +347,8 @@ RSpec.describe Alimento do
     @lista.insert_queue(@nodo2)
     
   end
+  
+  it"Huevo frito más valor energético que Leche vaca" do
+    expect(@HuevoFrito > @LecheVaca).to eq(true)
+  end
 end
