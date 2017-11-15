@@ -335,7 +335,7 @@ RSpec.describe Lista do
 end
 
 RSpec.describe Alimento do
-  before :each do
+  before :each do 
     @HuevoFrito = AlimentoC.new("Huevo Frito", 14.1, 0.0, 19.5, "Huevos, lacteos y helados" )
     @LecheVaca = AlimentoC.new("Leche vaca", 3.3, 4.8, 3.2, "Huevos, lacteos y helados")
     
@@ -348,19 +348,20 @@ RSpec.describe Alimento do
     
   end
   
-  it"Huevo frito más valor energético que Leche vaca" do
+  it "Huevo Frito mas valor calorico Leche de Vaca" do
     expect(@HuevoFrito > @LecheVaca).to eq(true)
-  end
+  end 
   
-  it "HuevoFrito menos valor energético que Leche vaca" do 
+  it "Huevo Frito menor valor calorico Leche de Vaca" do
     expect(@HuevoFrito < @LecheVaca).to eq(false)
   end
   
-  it "Huevo Frito no es igual a Leche Vaca" do 
-    expect(@HuevoFrito == @LecheVaca).to eq(false)
+  it "Huevo Frito es distinto a Leche de Vaca" do
+    expect(@HuevoFrito  == @LecheVaca).to eq(false)
   end
   
-  it "Huevo Frito es igual a Huevo Frito" do 
+  it "Huevo Frito es igual a HuevoFrito" do
     expect(@HuevoFrito == @HuevoFrito).to eq(true)
   end
+  
 end
