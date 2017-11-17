@@ -1,16 +1,28 @@
+#@author Cristina Garrido Amador
+#@date November 2017
+#@class Lista
+#@brief This class is for have a list of aliments, which have next and previous, and the value
+
+#Includes a new class which is node, fot conteins the information of the each value of the list
 Nodo = Struct.new(:valor, :siguiente, :anterior)
 
 class Lista
   
+  #Includes the module Enumerable
+  #It have tres values, head of the list, queue of the list and size of the list
   attr_accessor :head, :queue, :tamanio
   include Enumerable
   
+  #@return Lista type of the class
+  #@brief this method is for insert a new head at the list
   def initialize
     @head = nil
     @queue = nil
     @tamanio = 0
   end
   
+  #@param nodo [Nodo]
+  #@return head of the node
   def insert_head(nodo)
     if empty
       nodo[:siguiente] = nil
@@ -28,6 +40,9 @@ class Lista
     
   end
   
+  #@param nodo [Nodo]
+  #@return queue of the node
+  #@brief the method is for insert a new queue at the list
   def insert_queue(nodo)
     if empty
       nodo[:siguiente] = nil
@@ -44,6 +59,9 @@ class Lista
     @tamanio = @tamanio + 1
   end
   
+  #@param nodo, index [Nodo], [Number]
+  #@return nodo
+  #@brief this method is for insert a new node at the list
   def insert_plus(nodos, index)
     #si el indice es 1, insertara por la cabeza
     if(index == 1)
@@ -59,6 +77,8 @@ class Lista
     end
   end	
   
+  #@return head of the list
+  #@brief return the head of the list and pass the second value at the position of the head
   def pop_head
     if !empty
       if @head == @queue
@@ -76,6 +96,9 @@ class Lista
     end
   end
   
+  
+  #@return queue of the list
+  #@brief return the queue of the list and pass the penultimate value at the position of the head
   def pop_queue
     if !empty
       if @queue == @head
@@ -93,6 +116,7 @@ class Lista
     end
   end
   
+  #@return [String] the resulting of join all the information, value, next and previous
   def to_s
         aux = @head
         s = ""
@@ -104,6 +128,8 @@ class Lista
         
     end 
     
+  #return true or false
+  #@brief tell the programmer if the list is empty or not
   def empty
     if tamanio == 0
       true
@@ -112,6 +138,7 @@ class Lista
     end
   end
   
+  #return node
   def each
         aux = @head
         while aux != nil
