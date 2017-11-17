@@ -381,4 +381,7 @@ RSpec.describe Alimento do
     expect(@lista.count).to eq(2) 
   end
   
+  it"Probando short"do
+    expect(@lista.sort).to eq([@LecheVaca, @HuevoFrito])
+  end
 end
