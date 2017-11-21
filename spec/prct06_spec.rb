@@ -408,4 +408,8 @@ RSpec.describe Alimento do
   it"Probando que los alimentos disponen del array de datos"do
     expect(@Yogurt.datos.size).to eq(2)
   end
+  
+  it"Probando metodo AIBC"do
+    expect(@Yogurt.AIBC(0)).to eq(0.0)
+  end
 end

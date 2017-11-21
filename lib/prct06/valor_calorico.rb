@@ -7,7 +7,7 @@ class Alimento
   
   #Includes the module Comparable
   #It have four values,name of the aliment, and the information of proteins, lipids and glucids
-  attr_reader :nombre, :proteinas, :glucidos, :lipidos
+  attr_accessor :nombre, :proteinas, :glucidos, :lipidos, :datos
   include Comparable
   
   
