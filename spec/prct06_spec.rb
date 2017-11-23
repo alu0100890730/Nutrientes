@@ -415,4 +415,14 @@ RSpec.describe Alimento do
     expect(@Azucar.AIBC(0)).to eq(255.99999999999997)
     expect(@CompManzana.AIBC(0)).to eq(27.999999999999993)
   end
+  
+  it "Calculando el indice glucemico de cada individuo" do
+    expect((@CompManzana.AIBC(0) / @Azucar.AIBC(0)) * 100).to  eq(10.937499999999998)
+    expect((@CompManzana.AIBC(1) / @Azucar.AIBC(1)) * 100).to  eq(93.49489795918366)
+    expect((@Yogurt.AIBC(0) / @Azucar.AIBC(0)) * 100).to  eq(11.914062500000016)
+    expect((@Yogurt.AIBC(1) / @Azucar.AIBC(1)) * 100).to  eq(70.66326530612243)
+    expect((@Chocolate.AIBC(0) / @Azucar.AIBC(0)) * 100).to  eq(7.226562500000004)
+    expect((@Chocolate.AIBC(1) / @Azucar.AIBC(1)) * 100).to  eq(22.83163265306124)
+  end 
+  
 end
