@@ -143,7 +143,7 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#glucidos-instance_method" title="#glucidos (instance method)">#<strong>glucidos</strong>  &#x21d2; Object </a>
+      <a href="#datos-instance_method" title="#datos (instance method)">#<strong>datos</strong>  &#x21d2; Object </a>
     
 
     
@@ -152,7 +152,33 @@
   
   
     
-      <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Includes the module Comparable It have four values,name of the aliment, and
+the information of proteins, lipids and glucids.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#glucidos-instance_method" title="#glucidos (instance method)">#<strong>glucidos</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
     
     
   
@@ -182,8 +208,6 @@ the information of proteins, lipids and glucids.</p>
   
   
     
-      <span class="note title readonly">readonly</span>
-    
     
   
   
@@ -212,8 +236,6 @@ the information of proteins, lipids and glucids.</p>
   
   
     
-      <span class="note title readonly">readonly</span>
-    
     
   
   
@@ -241,8 +263,6 @@ the information of proteins, lipids and glucids.</p>
   
   
   
-    
-      <span class="note title readonly">readonly</span>
     
     
   
@@ -317,6 +337,28 @@ the information of proteins, lipids and glucids.</p>
     <span class="summary_desc"><div class='inline'>
 <p>Alimento type of the class.</p>
 </div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#AIBC-instance_method" title="#AIBC (instance method)">#<strong>AIBC</strong>(indice)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
   
 </li>
 
@@ -474,11 +516,55 @@ lipids.</p>
     <h2>Instance Attribute Details</h2>
     
       
-      <span id=""></span>
+      <span id="datos=-instance_method"></span>
       <div class="method_details first">
-  <h3 class="signature first" id="glucidos-instance_method">
+  <h3 class="signature first" id="datos-instance_method">
   
-    #<strong>glucidos</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>datos</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Includes the module Comparable It have four values,name of the aliment, and
+the information of proteins, lipids and glucids</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+10
+11
+12</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/prct06/valor_calorico.rb', line 10</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_datos'>datos</span>
+  <span class='ivar'>@datos</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="glucidos=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="glucidos-instance_method">
+  
+    #<strong>glucidos</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -518,11 +604,11 @@ the information of proteins, lipids and glucids</p>
 </div>
     
       
-      <span id=""></span>
+      <span id="lipidos=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="lipidos-instance_method">
   
-    #<strong>lipidos</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>lipidos</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -562,11 +648,11 @@ the information of proteins, lipids and glucids</p>
 </div>
     
       
-      <span id=""></span>
+      <span id="nombre=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="nombre-instance_method">
   
-    #<strong>nombre</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>nombre</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -606,11 +692,11 @@ the information of proteins, lipids and glucids</p>
 </div>
     
       
-      <span id=""></span>
+      <span id="proteinas=-instance_method"></span>
       <div class="method_details ">
   <h3 class="signature " id="proteinas-instance_method">
   
-    #<strong>proteinas</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+    #<strong>proteinas</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -831,6 +917,56 @@ the information of proteins, lipids and glucids</p>
 </div>
     
       <div class="method_details ">
+  <h3 class="signature " id="AIBC-instance_method">
+  
+    #<strong>AIBC</strong>(indice)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/prct06/valor_calorico.rb', line 59</span>
+
+<span class='kw'>def</span> <span class='const'>AIBC</span><span class='lparen'>(</span><span class='id identifier rubyid_indice'>indice</span><span class='rparen'>)</span> <span class='comment'>#indice = individuo
+</span>  <span class='id identifier rubyid_aux'>aux</span><span class='op'>=</span><span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='comment'>#zip --&gt; coge dos vectores y genera pares, la pos 1 del vector 1 y la pos 2 del vector a los devuelve y los guardo en aux
+</span>  <span class='comment'>#de esta forma tendre en x la pos actual y en y la pos-1 para llevar a cabo la formula
+</span>  <span class='id identifier rubyid_datos'>datos</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>1</span><span class='op'>..</span><span class='id identifier rubyid_datos'>datos</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>-</span> <span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_zip'>zip</span><span class='lparen'>(</span><span class='id identifier rubyid_datos'>datos</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>0</span><span class='op'>..</span><span class='id identifier rubyid_datos'>datos</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>-</span> <span class='int'>2</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span><span class='id identifier rubyid_y'>y</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_x'>x</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_datos'>datos</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+	<span class='id identifier rubyid_aux'>aux</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+    <span class='kw'>else</span>
+	<span class='id identifier rubyid_aux'>aux</span> <span class='op'>&lt;&lt;</span> <span class='lparen'>(</span><span class='lparen'>(</span><span class='lparen'>(</span><span class='id identifier rubyid_x'>x</span><span class='op'>-</span><span class='id identifier rubyid_datos'>datos</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='op'>+</span><span class='lparen'>(</span><span class='id identifier rubyid_y'>y</span><span class='op'>-</span><span class='id identifier rubyid_datos'>datos</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='op'>/</span><span class='int'>2</span><span class='rparen'>)</span><span class='op'>*</span><span class='int'>5</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_aux'>aux</span><span class='period'>.</span><span class='id identifier rubyid_reduce'>reduce</span><span class='lparen'>(</span><span class='symbol'>:+</span><span class='rparen'>)</span> <span class='comment'>#sumatorio del vector auxiliar, es lo que devuelve el metodo
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
   <h3 class="signature " id="to_s-instance_method">
   
     #<strong>to_s</strong>  &#x21d2; <tt>String</tt> 
@@ -906,12 +1042,12 @@ lipids</p>
       <pre class="lines">
 
 
-59
-60
-61</pre>
+75
+76
+77</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/prct06/valor_calorico.rb', line 59</span>
+      <pre class="code"><span class="info file"># File 'lib/prct06/valor_calorico.rb', line 75</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_valor_calorico'>valor_calorico</span>
     <span class='id identifier rubyid_valor'>valor</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='ivar'>@proteinas</span> <span class='op'>*</span> <span class='int'>4</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='ivar'>@glucidos</span> <span class='op'>*</span> <span class='int'>4</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='ivar'>@lipidos</span> <span class='op'>*</span> <span class='int'>9</span><span class='rparen'>)</span>
@@ -926,7 +1062,7 @@ lipids</p>
 </div>
 
       <div id="footer">
-  Generated on Fri Nov 17 11:04:13 2017 by
+  Generated on Thu Nov 23 11:49:34 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.3.0).
 </div>
