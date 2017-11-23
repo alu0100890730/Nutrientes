@@ -54,8 +54,12 @@ class Alimento
         imprime = "#{@nombre}: #{@proteinas} #{@glucidos} #{@lipidos}"
   end
   
-  def AIBC(indice)
+  #@return valor[Float]
+  #@brief it is a method for calculate the AIBC
+  def AIBC(indice) #indice = individuo
     aux=[]
+    #zip --> coge dos vectores y genera pares, la pos 1 del vector 1 y la pos 2 del vector a los devuelve y los guardo en aux
+    #de esta forma tendre en x la pos actual y en y la pos-1 para llevar a cabo la formula
     datos[indice][1..datos[indice].length - 1].zip(datos[indice][0..datos[indice].length - 2]) do |x,y|
       if x < datos[indice][0]
 	aux << 0.0
@@ -63,7 +67,7 @@ class Alimento
 	aux << (((x-datos[indice][0])+(y-datos[indice][0]))/2)*5
       end
     end
-    aux.reduce(:+)
+    aux.reduce(:+) #sumatorio del vector auxiliar, es lo que devuelve el metodo
   end
   
   #@return valor [Number]

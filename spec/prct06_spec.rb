@@ -411,5 +411,8 @@ RSpec.describe Alimento do
   
   it"Probando metodo AIBC"do
     expect(@Yogurt.AIBC(0)).to eq(30.500000000000036)
+    expect(@Chocolate.AIBC(0)).to eq(18.500000000000007)
+    expect(@Azucar.AIBC(0)).to eq(255.99999999999997)
+    expect(@CompManzana.AIBC(0)).to eq(27.999999999999993)
   end
 end
