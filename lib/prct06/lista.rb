@@ -128,6 +128,13 @@ class Lista
         
     end 
     
+  #return array
+  #@brief get a list this method convert that into an array
+    
+    def convertirArray(lista)
+      lista.map{|auxiliar|}
+    end
+    
   #return true or false
   #@brief tell the programmer if the list is empty or not
   def empty

@@ -338,7 +338,7 @@ RSpec.describe Lista do
       auxiliar = []
       auxiliar = @lista.convertirArray(@lista)
       
-      expect(@lista.size).to eq(auxiliar.length)
+      expect(@lista.tamanio).to eq(auxiliar.length)
     end
     
   end
