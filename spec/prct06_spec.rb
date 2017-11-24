@@ -341,6 +341,14 @@ RSpec.describe Lista do
       expect(@lista.tamanio).to eq(auxiliar.length)
     end
     
+    it"Ordenando array por valor"do      
+      aux = []
+      aux = @lista.ordenarArray(@lista)
+      
+      expect(aux[1]).to eq(@HuevoFrito)
+      expect(aux[22]).to eq(@Tomate)
+    end
+    
   end
 end
 
