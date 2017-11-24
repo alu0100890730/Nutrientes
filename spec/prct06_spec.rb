@@ -332,6 +332,16 @@ RSpec.describe Lista do
       puts @lista.to_s
     end 
   
+  describe "Pruebas de la práctica 10"do
+    
+    it"Convirtiendo la tabla en array"do
+      auxiliar = []
+      auxiliar = @lista.convertirArray(@lista)
+      
+      expect(@lista.size).to eq(auxiliar.length)
+    end
+    
+  end
 end
 
 RSpec.describe Alimento do
