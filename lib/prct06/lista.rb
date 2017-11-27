@@ -132,7 +132,30 @@ class Lista
   #@brief get a list this method convert that into an array
     
     def convertirArray(lista)
-      lista.map{|auxiliar|}
+      lista.map{ |y| y}
+    end
+    
+    #return array
+    #@brief get a list and return an array in order
+    
+    def ordenarArray(lista)
+      auxiliar = lista.convertirArray(lista)
+      ind = 0
+      indOrd = 0
+      for i in 0..(auxiliar.length-1)do
+	if auxiliar[indOrd].valor_calorico > auxiliar[i].valor_calorico
+	  indOrd = i
+	end
+	if i == auxiliar.length-1
+	  val_aux = auxiliar[ind]
+	  auxiliar[ind] = auxiliar[indOrd]
+	  auxiliar[indOrd] = val_aux
+	  ind++
+	  i = ind
+	end
+      end
+      
+      return auxiliar
     end
     
   #return true or false
