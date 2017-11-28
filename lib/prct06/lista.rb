@@ -139,7 +139,7 @@ class Lista
     #@brief get a list and return an array in order
     #@param lista
     
-    def ordenarArray lista
+    def ordenarArray(lista)
       auxiliar = lista.convertirArray(lista)
       for i in 0..(auxiliar.length)do
 	for j in 0..(auxiliar.length-2) do
@@ -178,6 +178,11 @@ class Lista
             
       return auxiliar
     end
+    
+    #def ordenandoSort(lista)
+      #auxiliar = lista.convertirArray(lista)
+      #auxiliar.sort
+    #end
     
     
   #return true or false

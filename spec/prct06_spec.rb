@@ -357,6 +357,14 @@ RSpec.describe Lista do
       expect(aux[21]).to eq(@AceiteOliva)
     end
     
+    it"Ordenando array por valor con sort"do
+      aux = []
+      aux = @lista.ordenandoSort(@lista)
+      
+      expect(aux[0]).to eq(@Tomate)
+      expect(aux[21]).to eq(@AceiteOliva)
+    end
+    
   end
 end
 
