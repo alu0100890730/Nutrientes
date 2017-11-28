@@ -211,6 +211,30 @@ of the list and size of the list.</p>
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#convertirArray-instance_method" title="#convertirArray (instance method)">#<strong>convertirArray</strong>(lista)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>return array.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#each-instance_method" title="#each (instance method)">#<strong>each</strong>  &#x21d2; Object </a>
     
 
@@ -349,6 +373,76 @@ of the list and size of the list.</p>
   
     <span class="summary_desc"><div class='inline'>
 <p>Queue of the node.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ordenandoEach-instance_method" title="#ordenandoEach (instance method)">#<strong>ordenandoEach</strong>(lista)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>return array.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ordenandoSort-instance_method" title="#ordenandoSort (instance method)">#<strong>ordenandoSort</strong>(lista)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ordenarArray-instance_method" title="#ordenarArray (instance method)">#<strong>ordenarArray</strong>(lista)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>return array.</p>
 </div></span>
   
 </li>
@@ -623,7 +717,48 @@ of the list and size of the list</p>
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="each-instance_method">
+  <h3 class="signature first" id="convertirArray-instance_method">
+  
+    #<strong>convertirArray</strong>(lista)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>return array</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+134
+135
+136</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 134</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_convertirArray'>convertirArray</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_lista'>lista</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_y'>y</span><span class='op'>|</span> <span class='id identifier rubyid_y'>y</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="each-instance_method">
   
     #<strong>each</strong>  &#x21d2; <tt>Object</tt> 
   
@@ -648,16 +783,16 @@ of the list and size of the list</p>
       <pre class="lines">
 
 
-142
-143
-144
-145
-146
-147
-148</pre>
+199
+200
+201
+202
+203
+204
+205</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 142</span>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 199</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_each'>each</span>
     <span class='id identifier rubyid_aux'>aux</span> <span class='op'>=</span> <span class='ivar'>@head</span>
@@ -697,16 +832,16 @@ of the list and size of the list</p>
       <pre class="lines">
 
 
-133
-134
-135
-136
-137
-138
-139</pre>
+190
+191
+192
+193
+194
+195
+196</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 133</span>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 190</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_empty'>empty</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_tamanio'>tamanio</span> <span class='op'>==</span> <span class='int'>0</span>
@@ -1020,6 +1155,193 @@ of the list and size of the list</p>
 </div>
     
       <div class="method_details ">
+  <h3 class="signature " id="ordenandoEach-instance_method">
+  
+    #<strong>ordenandoEach</strong>(lista)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>return array</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 160</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ordenandoEach'>ordenandoEach</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_auxiliar'>auxiliar</span> <span class='op'>=</span> <span class='id identifier rubyid_lista'>lista</span><span class='period'>.</span><span class='id identifier rubyid_convertirArray'>convertirArray</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_indice'>indice</span> <span class='op'>=</span> <span class='int'>0</span>
+  <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span>
+	<span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_y'>y</span><span class='op'>|</span>
+	  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_indice'>indice</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='op'>-</span><span class='int'>1</span><span class='rparen'>)</span>
+ <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='rbracket'>]</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='op'>+</span><span class='int'>1</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+   <span class='id identifier rubyid_temporal'>temporal</span> <span class='op'>=</span> <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='rbracket'>]</span>
+   <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='op'>+</span><span class='int'>1</span><span class='rbracket'>]</span>
+   <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_indice'>indice</span><span class='op'>+</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_temporal'>temporal</span>
+ <span class='kw'>end</span>
+	  <span class='kw'>end</span>
+	  
+	  <span class='id identifier rubyid_indice'>indice</span> <span class='op'>=</span> <span class='id identifier rubyid_indice'>indice</span><span class='op'>+</span><span class='int'>1</span>
+	<span class='kw'>end</span>
+	
+	<span class='id identifier rubyid_indice'>indice</span> <span class='op'>=</span> <span class='int'>0</span>
+  <span class='kw'>end</span>
+        
+  <span class='kw'>return</span> <span class='id identifier rubyid_auxiliar'>auxiliar</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ordenandoSort-instance_method">
+  
+    #<strong>ordenandoSort</strong>(lista)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+182
+183
+184
+185</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 182</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ordenandoSort'>ordenandoSort</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_auxiliar'>auxiliar</span> <span class='op'>=</span> <span class='id identifier rubyid_lista'>lista</span><span class='period'>.</span><span class='id identifier rubyid_convertirArray'>convertirArray</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='period'>.</span><span class='id identifier rubyid_sort'>sort</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ordenarArray-instance_method">
+  
+    #<strong>ordenarArray</strong>(lista)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>return array</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>lista</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 142</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ordenarArray'>ordenarArray</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_auxiliar'>auxiliar</span> <span class='op'>=</span> <span class='id identifier rubyid_lista'>lista</span><span class='period'>.</span><span class='id identifier rubyid_convertirArray'>convertirArray</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
+  <span class='kw'>for</span> <span class='id identifier rubyid_i'>i</span> <span class='kw'>in</span> <span class='int'>0</span><span class='op'>..</span><span class='lparen'>(</span><span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span><span class='kw'>do</span>
+	<span class='kw'>for</span> <span class='id identifier rubyid_j'>j</span> <span class='kw'>in</span> <span class='int'>0</span><span class='op'>..</span><span class='lparen'>(</span><span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='op'>-</span><span class='int'>2</span><span class='rparen'>)</span> <span class='kw'>do</span>
+	  <span class='kw'>if</span> <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_j'>j</span><span class='rbracket'>]</span> <span class='op'>&gt;</span> <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_j'>j</span><span class='op'>+</span><span class='int'>1</span><span class='rbracket'>]</span>
+   <span class='id identifier rubyid_temporal'>temporal</span> <span class='op'>=</span> <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_j'>j</span><span class='rbracket'>]</span>
+   <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_j'>j</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_j'>j</span><span class='op'>+</span><span class='int'>1</span><span class='rbracket'>]</span>
+   <span class='id identifier rubyid_auxiliar'>auxiliar</span><span class='lbracket'>[</span><span class='id identifier rubyid_j'>j</span><span class='op'>+</span><span class='int'>1</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_temporal'>temporal</span>
+ <span class='kw'>end</span>
+	<span class='kw'>end</span>
+  <span class='kw'>end</span>
+  
+  <span class='kw'>return</span> <span class='id identifier rubyid_auxiliar'>auxiliar</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
   <h3 class="signature " id="pop_head-instance_method">
   
     #<strong>pop_head</strong>  &#x21d2; <tt>Object</tt> 
@@ -1267,7 +1589,7 @@ of the list and size of the list</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Nov 23 11:49:34 2017 by
+  Generated on Tue Nov 28 17:42:28 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.3.0).
 </div>
