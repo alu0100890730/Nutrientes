@@ -179,10 +179,10 @@ class Lista
       return auxiliar
     end
     
-    #def ordenandoSort(lista)
-      #auxiliar = lista.convertirArray(lista)
-      #auxiliar.sort
-    #end
+    def ordenandoSort(lista)
+      auxiliar = lista.convertirArray(lista)
+      auxiliar.sort
+    end
     
     
   #return true or false
