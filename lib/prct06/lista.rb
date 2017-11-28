@@ -137,26 +137,45 @@ class Lista
     
     #return array
     #@brief get a list and return an array in order
+    #@param lista
     
-    def ordenarArray(lista)
+    def ordenarArray lista
       auxiliar = lista.convertirArray(lista)
-      ind = 0
-      indOrd = 0
-      for i in 0..(auxiliar.length-1)do
-	if auxiliar[indOrd].valor_calorico > auxiliar[i].valor_calorico
-	  indOrd = i
-	end
-	if i == auxiliar.length-1
-	  val_aux = auxiliar[ind]
-	  auxiliar[ind] = auxiliar[indOrd]
-	  auxiliar[indOrd] = val_aux
-	  ind++
-	  i = ind
+      for i in 0..(auxiliar.length)do
+	for j in 0..(auxiliar.length-2) do
+	  if auxiliar[j] > auxiliar[j+1]
+	      temporal = auxiliar[j]
+	      auxiliar[j] = auxiliar[j+1]
+	      auxiliar[j+1] = temporal
+	    end
 	end
       end
       
       return auxiliar
     end
+    
+    #return array
+    #@brief get a list and return an array in order
+    
+    def ordenandoEach(lista)
+      auxiliar = lista.convertirArray(lista)
+      aux = []
+      copia = auxiliar
+      auxiliar.each do |x|
+	alimento = x
+	copia.each do |y|
+	  if alimento.valor_calorico > y.valor_calorico
+	    alimento = y
+	  end
+	end
+	aux.push(alimento)
+	copia.delete(alimento)
+	auxiliar.delete(alimento)
+      end
+      
+      return auxiliar
+    end
+    
     
   #return true or false
   #@brief tell the programmer if the list is empty or not
