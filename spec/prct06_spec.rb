@@ -554,3 +554,5 @@ Benchmark.benchmark(CAPTION, 7, FORMAT, ">total:", ">avg:") do |x|
   tf = x.report("each") {for i in 0..30 do @lista.ordenandoEach(@lista) end}
   tf = x.report("sort") {for i in 0..30 do @lista.ordenandoSort(@lista) end}
 end
+
+
