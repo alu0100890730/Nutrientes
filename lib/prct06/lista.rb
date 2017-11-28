@@ -159,20 +159,23 @@ class Lista
     
     def ordenandoEach(lista)
       auxiliar = lista.convertirArray(lista)
-      aux = []
-      copia = auxiliar
+      indice = 0
       auxiliar.each do |x|
-	alimento = x
-	copia.each do |y|
-	  if alimento.valor_calorico > y.valor_calorico
-	    alimento = y
+	auxiliar.each do |y|
+	  if (indice < auxiliar.length-1)
+	    if (auxiliar[indice] > auxiliar[indice+1])
+	      temporal = auxiliar[indice]
+	      auxiliar[indice] = auxiliar[indice+1]
+	      auxiliar[indice+1] = temporal
+	    end
 	  end
+	  
+	  indice = indice+1
 	end
-	aux.push(alimento)
-	copia.delete(alimento)
-	auxiliar.delete(alimento)
+	
+	indice = 0
       end
-      
+            
       return auxiliar
     end
     
