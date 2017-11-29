@@ -130,6 +130,7 @@ class Lista
     
   #return array
   #@brief get a list this method convert that into an array
+  #param lista
     
     def convertirArray(lista)
       lista.map{ |y| y}
@@ -137,7 +138,7 @@ class Lista
     
     #return array
     #@brief get a list and return an array in order
-    #@param lista
+    #param lista
     
     def ordenarArray(lista)
       auxiliar = lista.convertirArray(lista)
@@ -156,6 +157,7 @@ class Lista
     
     #return array
     #@brief get a list and return an array in order
+    #param lista
     
     def ordenandoEach(lista)
       auxiliar = lista.convertirArray(lista)
