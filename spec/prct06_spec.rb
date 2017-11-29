@@ -406,7 +406,7 @@ RSpec.describe Alimento do
   end
   
   it "Huevo Frito es distinto de Leche de Vaca" do
-    expect(@HuevoFrito == @LecheVaca).to eq(false)
+    expect(@HuevoFrito == @nodo2).to eq(false)
   end
   
   it "Utilizando Mixin Enumerable, Max Lista" do
