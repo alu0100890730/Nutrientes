@@ -480,6 +480,7 @@ end
 
 Benchmark.benchmark(CAPTION, 7, FORMAT, ">total:", ">avg:") do |x|
   
+  #Añado comentario para Coveralls
     @HuevoFrito = AlimentoC.new("Huevo Frito", 14.1, 0.0, 19.5, "Huevos, lacteos y helados" )
     @LecheVaca = AlimentoC.new("Leche vaca", 3.3, 4.8, 3.2, "Huevos, lacteos y helados")
     @Yogurt = AlimentoC.new("Yogurt", 3.8, 4.9, 3.8, "Huevos, lacteos y helados")
