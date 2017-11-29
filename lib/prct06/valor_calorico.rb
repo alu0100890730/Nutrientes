@@ -54,6 +54,7 @@ class Alimento
         imprime = "#{@nombre}: #{@proteinas} #{@glucidos} #{@lipidos}"
   end
   
+  
   #@return valor[Float]
   #@brief it is a method for calculate the AIBC
   def AIBC(indice) #indice = individuo
@@ -75,5 +76,6 @@ class Alimento
   def valor_calorico
       valor = (@proteinas * 4) + (@glucidos * 4) + (@lipidos * 9)
   end 
+  
   
 end
