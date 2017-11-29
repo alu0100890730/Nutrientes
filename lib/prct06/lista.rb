@@ -155,6 +155,7 @@ class Lista
       return auxiliar
     end
     
+    
     #return array
     #@brief get a list and return an array in order
     #param lista
