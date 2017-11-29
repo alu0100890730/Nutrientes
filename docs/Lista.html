@@ -226,7 +226,7 @@ of the list and size of the list.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>return array.</p>
+<p>return array param lista.</p>
 </div></span>
   
 </li>
@@ -396,7 +396,7 @@ of the list and size of the list.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>return array.</p>
+<p>return array param lista.</p>
 </div></span>
   
 </li>
@@ -442,7 +442,7 @@ of the list and size of the list.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>return array.</p>
+<p>return array param lista.</p>
 </div></span>
   
 </li>
@@ -728,7 +728,7 @@ of the list and size of the list</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>return array</p>
+<p>return array param lista</p>
 
 
   </div>
@@ -742,12 +742,12 @@ of the list and size of the list</p>
       <pre class="lines">
 
 
-134
 135
-136</pre>
+136
+137</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 134</span>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 135</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_convertirArray'>convertirArray</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_lista'>lista</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_y'>y</span><span class='op'>|</span> <span class='id identifier rubyid_y'>y</span><span class='rbrace'>}</span>
@@ -783,16 +783,16 @@ of the list and size of the list</p>
       <pre class="lines">
 
 
-199
-200
 201
 202
 203
 204
-205</pre>
+205
+206
+207</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 199</span>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 201</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_each'>each</span>
     <span class='id identifier rubyid_aux'>aux</span> <span class='op'>=</span> <span class='ivar'>@head</span>
@@ -832,16 +832,16 @@ of the list and size of the list</p>
       <pre class="lines">
 
 
-190
-191
 192
 193
 194
 195
-196</pre>
+196
+197
+198</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 190</span>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 192</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_empty'>empty</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_tamanio'>tamanio</span> <span class='op'>==</span> <span class='int'>0</span>
@@ -1166,7 +1166,7 @@ of the list and size of the list</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>return array</p>
+<p>return array param lista</p>
 
 
   </div>
@@ -1180,8 +1180,6 @@ of the list and size of the list</p>
       <pre class="lines">
 
 
-160
-161
 162
 163
 164
@@ -1200,10 +1198,12 @@ of the list and size of the list</p>
 177
 178
 179
-180</pre>
+180
+181
+182</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 160</span>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 162</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ordenandoEach'>ordenandoEach</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_auxiliar'>auxiliar</span> <span class='op'>=</span> <span class='id identifier rubyid_lista'>lista</span><span class='period'>.</span><span class='id identifier rubyid_convertirArray'>convertirArray</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
@@ -1246,13 +1246,13 @@ of the list and size of the list</p>
       <pre class="lines">
 
 
-182
-183
 184
-185</pre>
+185
+186
+187</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 182</span>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 184</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ordenandoSort'>ordenandoSort</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_auxiliar'>auxiliar</span> <span class='op'>=</span> <span class='id identifier rubyid_lista'>lista</span><span class='period'>.</span><span class='id identifier rubyid_convertirArray'>convertirArray</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
@@ -1275,28 +1275,13 @@ of the list and size of the list</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>return array</p>
+<p>return array param lista</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
   
-    <li>
-      
-        <span class='name'>lista</span>
-      
-      
-        <span class='type'></span>
-      
-      
-      
-    </li>
-  
-</ul>
-
 
 </div><table class="source_code">
   <tr>
@@ -1304,7 +1289,6 @@ of the list and size of the list</p>
       <pre class="lines">
 
 
-142
 143
 144
 145
@@ -1317,10 +1301,11 @@ of the list and size of the list</p>
 152
 153
 154
-155</pre>
+155
+156</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 142</span>
+      <pre class="code"><span class="info file"># File 'lib/prct06/lista.rb', line 143</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ordenarArray'>ordenarArray</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_auxiliar'>auxiliar</span> <span class='op'>=</span> <span class='id identifier rubyid_lista'>lista</span><span class='period'>.</span><span class='id identifier rubyid_convertirArray'>convertirArray</span><span class='lparen'>(</span><span class='id identifier rubyid_lista'>lista</span><span class='rparen'>)</span>
@@ -1589,7 +1574,7 @@ of the list and size of the list</p>
 </div>
 
       <div id="footer">
-  Generated on Tue Nov 28 17:42:28 2017 by
+  Generated on Wed Nov 29 12:28:49 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.3.0).
 </div>
